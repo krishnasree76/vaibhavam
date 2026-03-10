@@ -1,0 +1,52 @@
+import type { Metadata, Viewport } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import { WhatsAppButton } from '@/components/whatsapp-button'
+import './globals.css'
+
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: 'Vaibhavam Caterers - Traditional Catering for Celebrations',
+  description: 'Authentic flavors for memorable celebrations. Premium catering service for weddings, birthdays, corporate events, and special gatherings with traditional taste and exceptional service.',
+  // generator: 'v0.app',
+  // icons: {
+  //   icon: [
+  //     {
+  //       url: '/icon-light-32x32.png',
+  //       media: '(prefers-color-scheme: light)',
+  //     },
+  //     {
+  //       url: '/icon-dark-32x32.png',
+  //       media: '(prefers-color-scheme: dark)',
+  //     },
+  //     {
+  //       url: '/icon.svg',
+  //       type: 'image/svg+xml',
+  //     },
+  //   ],
+  //   apple: '/apple-icon.png',
+  // },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#6B0F8A',
+  userScalable: true,
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en">
+      <body className="font-sans antialiased">
+        {children}
+        <WhatsAppButton />
+        <Analytics />
+      </body>
+    </html>
+  )
+}
