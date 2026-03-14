@@ -542,53 +542,78 @@ export default function Home() {
       <main className="min-h-screen">
 
         {/* HERO SECTION */}
-        <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-primary/5 to-secondary/5">
+        <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-purple-50 overflow-hidden">
 
-          <div
-            className="absolute inset-0 opacity-30"
-            style={{
-              backgroundImage: 'url(/image.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
+  <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
-          <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+    {/* LEFT CONTENT */}
+    <motion.div
+      initial={{ opacity: 0, x: -60 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      className="text-left"
+    >
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-5xl md:text-7xl font-bold text-foreground mb-6"
-            >
-              Authentic Flavors for
-              <span className="text-primary"> Memorable Celebrations</span>
-            </motion.h1>
+      <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6">
+  <span className="whitespace-nowrap">Authentic Flavors for</span>
+  <br />
+  <span className="text-primary">
+    Memorable Celebrations
+  </span>
+</h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Vaibhavam Caterers brings traditional taste and exceptional service to weddings and celebrations.
-            </p>
+      <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
+        Vaibhavam Caterers brings traditional taste and exceptional service
+        to weddings, family celebrations, and grand events.
+      </p>
 
-            <div className="flex gap-4 justify-center">
+      <div className="flex flex-wrap gap-4">
 
-              <Link href="/menu">
-                <Button className="bg-primary text-white flex items-center gap-2">
-                  View Menu
-                  <ArrowRight size={20} />
-                </Button>
-              </Link>
+        <Link href="/menu">
+          <Button className="bg-primary hover:bg-secondary text-white px-8 py-3 text-lg flex items-center gap-2">
+            View Menu
+            <ArrowRight size={20} />
+          </Button>
+        </Link>
 
-              <Link href="/contact">
-                <Button variant="outline">
-                  Book Catering
-                </Button>
-              </Link>
+        <Link href="/contact">
+          <Button
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg"
+          >
+            Book Catering
+          </Button>
+        </Link>
 
-            </div>
+      </div>
 
-          </div>
+    </motion.div>
 
-        </section>
+
+    {/* RIGHT IMAGE */}
+    <motion.div
+      initial={{ opacity: 0, x: 60, scale: 0.95 }}
+      animate={{ opacity: 1, x: 0, scale: 1 }}
+      transition={{ duration: 1 }}
+      className="relative"
+    >
+
+      <div className="relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl">
+
+        <Image
+          src="/closed-metal-pots.jpg"
+          alt="Catering Food Display"
+          fill
+          className="object-cover"
+        />
+
+      </div>
+
+    </motion.div>
+
+  </div>
+
+</section>
 
         {/* SERVICES */}
         <section className="py-20 bg-card">
