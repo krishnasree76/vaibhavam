@@ -13,7 +13,7 @@ export default function ServicesPage() {
       id: 'wedding',
       title: 'Wedding Catering',
       description: 'Create unforgettable memories with our traditional wedding catering service.',
-      image: '/hero-wedding-catering.jpg',
+      image: '/images/wedding-catering.jpg',
       features: [
         'Complete menu customization',
         'Professional staff and service',
@@ -27,7 +27,7 @@ export default function ServicesPage() {
       id: 'birthday',
       title: 'Birthday Party Catering',
       description: 'Celebrate in style with our fun and festive birthday party catering.',
-      image: '/birthday-party-catering.jpg',
+      image: '/images/birthday-catering.jpg',
       features: [
         'Fun menu options',
         'Snacks and sweets',
@@ -41,7 +41,7 @@ export default function ServicesPage() {
       id: 'corporate',
       title: 'Corporate Event Catering',
       description: 'Professional catering for your office events and business gatherings.',
-      image: '/wedding-feast.jpg',
+      image: '/images/corporate-catering.jpg',
       features: [
         'Professional presentation',
         'Efficient service',
@@ -55,7 +55,7 @@ export default function ServicesPage() {
       id: 'housewarming',
       title: 'Housewarming Functions',
       description: 'Perfect menu for celebrating new homes and family gatherings.',
-      image: '/paneer-butter-masala.jpg',
+      image: '/images/housewarming-catering.jpg',
       features: [
         'Home-style menu options',
         'Flexible guest count',
@@ -69,7 +69,7 @@ export default function ServicesPage() {
       id: 'festivals',
       title: 'Festival & Celebration Catering',
       description: 'Special menus for Diwali, Sankranti, Ugadi, and cultural celebrations.',
-      image: '/traditional-sweets.jpg',
+      image: '/images/festival-catering.jpg',
       features: [
         'Traditional festival menus',
         'Authentic recipes',
@@ -83,7 +83,7 @@ export default function ServicesPage() {
       id: 'custom',
       title: 'Custom Menu Services',
       description: 'Your event, your way. We can create a personalized menu just for you.',
-      image: '/wedding-feast.jpg',
+      image: '/images/custom-catering.jpg',
       features: [
         'Personalized menu creation',
         'Dietary preferences',
@@ -192,10 +192,10 @@ export default function ServicesPage() {
                       ))}
                     </div>
 
-                    <Button className="bg-primary hover:bg-secondary text-white px-8 py-3 font-semibold flex items-center gap-2">
+                    {/* <Button className="bg-primary hover:bg-secondary text-white px-8 py-3 font-semibold flex items-center gap-2">
                       Learn More
                       <ArrowRight size={20} />
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
 

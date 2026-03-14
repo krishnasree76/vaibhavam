@@ -9,48 +9,48 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 export default function GalleryPage() {
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
 
-  const galleryImages = {
-    wedding: [
-      { src: '/hero-wedding-catering.jpg', title: 'Wedding Feast' },
-      { src: '/gallery-wedding-2.jpg', title: 'Elegant Wedding Setup' },
-      { src: '/buffet-setup.jpg', title: 'Wedding Buffet' },
-      { src: '/wedding-feast.jpg', title: 'Traditional Wedding Spread' },
-      { src: '/hero-wedding-catering.jpg', title: 'Wedding Decoration' },
-      { src: '/gallery-wedding-2.jpg', title: 'Celebration Moment' },
-    ],
-    birthday: [
-      { src: '/birthday-party-catering.jpg', title: 'Birthday Setup' },
-      { src: '/traditional-sweets.jpg', title: 'Birthday Sweets' },
-      { src: '/paneer-tikka.jpg', title: 'Birthday Starters' },
-      { src: '/birthday-party-catering.jpg', title: 'Party Buffet' },
-      { src: '/traditional-sweets.jpg', title: 'Celebration Sweets' },
-      { src: '/paneer-tikka.jpg', title: 'Party Appetizers' },
-    ],
-    buffet: [
-      { src: '/buffet-setup.jpg', title: 'Full Buffet Setup' },
-      { src: '/wedding-feast.jpg', title: 'Multiple Station Buffet' },
-      { src: '/traditional-meal-spread.jpg', title: 'Main Course Buffet' },
-      { src: '/buffet-setup.jpg', title: 'Catering Service' },
-      { src: '/wedding-feast.jpg', title: 'Event Buffet' },
-      { src: '/traditional-meal-spread.jpg', title: 'Food Service' },
-    ],
-    traditional: [
-      { src: '/traditional-meal-spread.jpg', title: 'Traditional Meal' },
-      { src: '/paneer-butter-masala.jpg', title: 'Paneer Curry' },
-      { src: '/veg-biryani.jpg', title: 'Vegetarian Biryani' },
-      { src: '/chicken-curry.jpg', title: 'Chicken Preparation' },
-      { src: '/paneer-tikka.jpg', title: 'Tandoori Items' },
-      { src: '/traditional-meal-spread.jpg', title: 'Complete Meal' },
-    ],
-    desserts: [
-      { src: '/dessert-table.jpg', title: 'Dessert Table' },
-      { src: '/traditional-sweets.jpg', title: 'Traditional Sweets' },
-      { src: '/gulab-jamun.jpg', title: 'Gulab Jamun' },
-      { src: '/traditional-sweets.jpg', title: 'Sweet Selection' },
-      { src: '/dessert-table.jpg', title: 'Dessert Spread' },
-      { src: '/gulab-jamun.jpg', title: 'Sweet Presentation' },
-    ],
-  };
+  // const galleryImages = {
+  //   wedding: [
+  //     { src: '/hero-wedding-catering.jpg', title: 'Wedding Feast' },
+  //     { src: '/gallery-wedding-2.jpg', title: 'Elegant Wedding Setup' },
+  //     { src: '/buffet-setup.jpg', title: 'Wedding Buffet' },
+  //     { src: '/wedding-feast.jpg', title: 'Traditional Wedding Spread' },
+  //     { src: '/hero-wedding-catering.jpg', title: 'Wedding Decoration' },
+  //     { src: '/gallery-wedding-2.jpg', title: 'Celebration Moment' },
+  //   ],
+  //   birthday: [
+  //     { src: '/birthday-party-catering.jpg', title: 'Birthday Setup' },
+  //     { src: '/traditional-sweets.jpg', title: 'Birthday Sweets' },
+  //     { src: '/paneer-tikka.jpg', title: 'Birthday Starters' },
+  //     { src: '/birthday-party-catering.jpg', title: 'Party Buffet' },
+  //     { src: '/traditional-sweets.jpg', title: 'Celebration Sweets' },
+  //     { src: '/paneer-tikka.jpg', title: 'Party Appetizers' },
+  //   ],
+  //   buffet: [
+  //     { src: '/buffet-setup.jpg', title: 'Full Buffet Setup' },
+  //     { src: '/wedding-feast.jpg', title: 'Multiple Station Buffet' },
+  //     { src: '/traditional-meal-spread.jpg', title: 'Main Course Buffet' },
+  //     { src: '/buffet-setup.jpg', title: 'Catering Service' },
+  //     { src: '/wedding-feast.jpg', title: 'Event Buffet' },
+  //     { src: '/traditional-meal-spread.jpg', title: 'Food Service' },
+  //   ],
+  //   traditional: [
+  //     { src: '/traditional-meal-spread.jpg', title: 'Traditional Meal' },
+  //     { src: '/paneer-butter-masala.jpg', title: 'Paneer Curry' },
+  //     { src: '/veg-biryani.jpg', title: 'Vegetarian Biryani' },
+  //     { src: '/chicken-curry.jpg', title: 'Chicken Preparation' },
+  //     { src: '/paneer-tikka.jpg', title: 'Tandoori Items' },
+  //     { src: '/traditional-meal-spread.jpg', title: 'Complete Meal' },
+  //   ],
+  //   desserts: [
+  //     { src: '/dessert-table.jpg', title: 'Dessert Table' },
+  //     { src: '/traditional-sweets.jpg', title: 'Traditional Sweets' },
+  //     { src: '/gulab-jamun.jpg', title: 'Gulab Jamun' },
+  //     { src: '/traditional-sweets.jpg', title: 'Sweet Selection' },
+  //     { src: '/dessert-table.jpg', title: 'Dessert Spread' },
+  //     { src: '/gulab-jamun.jpg', title: 'Sweet Presentation' },
+  //   ],
+  // };
 
   return (
     <>
@@ -74,7 +74,7 @@ export default function GalleryPage() {
         </section>
 
         {/* Gallery Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
+        {/* <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <Tabs defaultValue="wedding" className="w-full">
               <TabsList className="grid w-full grid-cols-5 mb-12 bg-background border border-border rounded-lg">
@@ -83,10 +83,10 @@ export default function GalleryPage() {
                 <TabsTrigger value="buffet">Buffet</TabsTrigger>
                 <TabsTrigger value="traditional">Traditional</TabsTrigger>
                 <TabsTrigger value="desserts">Desserts</TabsTrigger>
-              </TabsList>
+              </TabsList> */}
 
               {/* Wedding Gallery */}
-              <TabsContent value="wedding">
+              {/* <TabsContent value="wedding">
                 <div className="grid md:grid-cols-3 gap-6">
                   {galleryImages.wedding.map((image, index) => (
                     <motion.div
@@ -112,10 +112,10 @@ export default function GalleryPage() {
                     </motion.div>
                   ))}
                 </div>
-              </TabsContent>
+              </TabsContent> */}
 
               {/* Birthday Gallery */}
-              <TabsContent value="birthday">
+              {/* <TabsContent value="birthday">
                 <div className="grid md:grid-cols-3 gap-6">
                   {galleryImages.birthday.map((image, index) => (
                     <motion.div
@@ -141,10 +141,10 @@ export default function GalleryPage() {
                     </motion.div>
                   ))}
                 </div>
-              </TabsContent>
+              </TabsContent> */}
 
               {/* Buffet Gallery */}
-              <TabsContent value="buffet">
+              {/* <TabsContent value="buffet">
                 <div className="grid md:grid-cols-3 gap-6">
                   {galleryImages.buffet.map((image, index) => (
                     <motion.div
@@ -170,10 +170,10 @@ export default function GalleryPage() {
                     </motion.div>
                   ))}
                 </div>
-              </TabsContent>
+              </TabsContent> */}
 
               {/* Traditional Gallery */}
-              <TabsContent value="traditional">
+              {/* <TabsContent value="traditional">
                 <div className="grid md:grid-cols-3 gap-6">
                   {galleryImages.traditional.map((image, index) => (
                     <motion.div
@@ -199,10 +199,10 @@ export default function GalleryPage() {
                     </motion.div>
                   ))}
                 </div>
-              </TabsContent>
+              </TabsContent> */}
 
               {/* Desserts Gallery */}
-              <TabsContent value="desserts">
+              {/* <TabsContent value="desserts">
                 <div className="grid md:grid-cols-3 gap-6">
                   {galleryImages.desserts.map((image, index) => (
                     <motion.div
@@ -228,10 +228,10 @@ export default function GalleryPage() {
                     </motion.div>
                   ))}
                 </div>
-              </TabsContent>
-            </Tabs>
+              </TabsContent> */}
+            {/* </Tabs>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />

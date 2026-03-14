@@ -7,32 +7,32 @@ import { Card } from '@/components/ui/card';
 import { Users, Award, Leaf, Heart } from 'lucide-react';
 
 export default function AboutPage() {
-  const teamMembers = [
-    {
-      name: 'Chef Rajesh Kumar',
-      role: 'Head Chef & Founder',
-      bio: 'With 20+ years of experience in traditional Indian cuisine, Chef Rajesh brings authentic flavors to every dish.',
-      image: '/placeholder-user.jpg',
-    },
-    {
-      name: 'Priya Sharma',
-      role: 'Operations Manager',
-      bio: 'Ensures every event runs smoothly with meticulous planning and attention to detail.',
-      image: '/placeholder-user.jpg',
-    },
-    {
-      name: 'Amit Patel',
-      role: 'Sous Chef',
-      bio: 'Specializes in traditional sweets and desserts with a passion for culinary excellence.',
-      image: '/placeholder-user.jpg',
-    },
-    {
-      name: 'Divya Nair',
-      role: 'Client Coordinator',
-      bio: 'Dedicated to understanding client needs and ensuring exceptional service delivery.',
-      image: '/placeholder-user.jpg',
-    },
-  ];
+  // const teamMembers = [
+  //   {
+  //     name: 'Chef Rajesh Kumar',
+  //     role: 'Head Chef & Founder',
+  //     bio: 'With 20+ years of experience in traditional Indian cuisine, Chef Rajesh brings authentic flavors to every dish.',
+  //     image: '/placeholder-user.jpg',
+  //   },
+  //   {
+  //     name: 'Priya Sharma',
+  //     role: 'Operations Manager',
+  //     bio: 'Ensures every event runs smoothly with meticulous planning and attention to detail.',
+  //     image: '/placeholder-user.jpg',
+  //   },
+  //   {
+  //     name: 'Amit Patel',
+  //     role: 'Sous Chef',
+  //     bio: 'Specializes in traditional sweets and desserts with a passion for culinary excellence.',
+  //     image: '/placeholder-user.jpg',
+  //   },
+  //   {
+  //     name: 'Divya Nair',
+  //     role: 'Client Coordinator',
+  //     bio: 'Dedicated to understanding client needs and ensuring exceptional service delivery.',
+  //     image: '/placeholder-user.jpg',
+  //   },
+  // ];
 
   const values = [
     {
@@ -103,7 +103,7 @@ export default function AboutPage() {
               <div className="h-96 rounded-lg overflow-hidden shadow-lg">
                 <div 
                   className="w-full h-full bg-cover bg-center"
-                  style={{ backgroundImage: 'url(/hero-wedding-catering.jpg)' }}
+                  style={{ backgroundImage: 'url(/images/about.png)' }}
                 />
               </div>
             </motion.div>
@@ -112,39 +112,61 @@ export default function AboutPage() {
 
         {/* Mission & Vision */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-card">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="text-3xl font-bold text-foreground mb-4">Our Mission</h2>
-                <p className="text-muted-foreground text-lg mb-4">
-                  To deliver memorable dining experiences that celebrate tradition, quality, and excellence at every event.
-                </p>
-                <p className="text-muted-foreground text-lg">
-                  We are committed to providing authentic traditional flavors, fresh ingredients, and professional service that exceeds expectations.
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="text-3xl font-bold text-foreground mb-4">Our Vision</h2>
-                <p className="text-muted-foreground text-lg mb-4">
-                  To be the most trusted and preferred catering service, known for authenticity, quality, and innovation.
-                </p>
-                <p className="text-muted-foreground text-lg">
-                  We envision a future where every celebration is elevated with our exceptional culinary expertise and dedicated service.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+  <div className="max-w-7xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-10">
+
+      {/* Mission Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300"
+      >
+        <h2 className="text-3xl font-bold text-foreground mb-4">
+          Our Mission
+        </h2>
+
+        <p className="text-muted-foreground text-lg mb-4">
+          To deliver memorable dining experiences that celebrate tradition,
+          quality, and excellence at every event.
+        </p>
+
+        <p className="text-muted-foreground text-lg">
+          We are committed to providing authentic traditional flavors, fresh
+          ingredients, and professional service that exceeds expectations.
+        </p>
+      </motion.div>
+
+
+      {/* Vision Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300"
+      >
+        <h2 className="text-3xl font-bold text-foreground mb-4">
+          Our Vision
+        </h2>
+
+        <p className="text-muted-foreground text-lg mb-4">
+          To be the most trusted and preferred catering service, known for
+          authenticity, quality, and innovation.
+        </p>
+
+        <p className="text-muted-foreground text-lg">
+          We envision a future where every celebration is elevated with our
+          exceptional culinary expertise and dedicated service.
+        </p>
+      </motion.div>
+
+    </div>
+  </div>
+</section>
 
         {/* Our Values */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
@@ -231,7 +253,7 @@ export default function AboutPage() {
         </section>
 
         {/* Team */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
+        {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -272,7 +294,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />
