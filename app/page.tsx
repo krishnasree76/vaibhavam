@@ -542,9 +542,9 @@ export default function Home() {
       <main className="min-h-screen">
 
         {/* HERO SECTION */}
-        <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-purple-50 overflow-hidden">
+        <section className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-purple-50 overflow-hidden">
 
-  <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+  <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
     {/* LEFT CONTENT */}
     <motion.div
@@ -554,15 +554,17 @@ export default function Home() {
       className="text-left"
     >
 
-      <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6">
-  <span className="whitespace-nowrap">Authentic Flavors for</span>
-  <br />
-  <span className="text-primary">
-    Memorable Celebrations
-  </span>
-</h1>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6">
+        <span className="sm:whitespace-nowrap">
+          Authentic Flavors for
+        </span>
+        <br />
+        <span className="text-primary">
+          Memorable Celebrations
+        </span>
+      </h1>
 
-      <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
+      <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
         Vaibhavam Caterers brings traditional taste and exceptional service
         to weddings, family celebrations, and grand events.
       </p>
@@ -570,7 +572,7 @@ export default function Home() {
       <div className="flex flex-wrap gap-4">
 
         <Link href="/menu">
-          <Button className="bg-primary hover:bg-secondary text-white px-8 py-3 text-lg flex items-center gap-2">
+          <Button className="bg-primary hover:bg-secondary text-white px-6 sm:px-8 py-3 text-base sm:text-lg flex items-center gap-2">
             View Menu
             <ArrowRight size={20} />
           </Button>
@@ -579,7 +581,7 @@ export default function Home() {
         <Link href="/contact">
           <Button
             variant="outline"
-            className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg"
+            className="border-primary text-primary hover:bg-primary/10 px-6 sm:px-8 py-3 text-base sm:text-lg"
           >
             Book Catering
           </Button>
@@ -598,7 +600,7 @@ export default function Home() {
       className="relative"
     >
 
-      <div className="relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl">
+      <div className="relative h-[280px] sm:h-[350px] md:h-[420px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl">
 
         <Image
           src="/closed-metal-pots.jpg"

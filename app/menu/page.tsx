@@ -179,7 +179,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
-
+import { ArrowRight } from "lucide-react";
 export default function MenuPage() {
 
   const packages = [
@@ -280,22 +280,30 @@ export default function MenuPage() {
                     {pkg.title}
                   </h2>
 
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
 
-                    {pkg.items.map((item, i) => (
+  {pkg.items.map((item, i) => (
 
-                      <li key={i}>
-                        <Link
-                          href={item.link}
-                          className="text-lg text-muted-foreground hover:text-primary transition"
-                        >
-                          • {item.name}
-                        </Link>
-                      </li>
+    <li key={i}>
+      <Link
+        href={item.link}
+        className="flex items-center gap-2 text-lg text-muted-foreground hover:text-primary transition group"
+      >
+        <ArrowRight
+          size={18}
+          className="text-primary group-hover:translate-x-1 transition-transform"
+        />
 
-                    ))}
+        <span className="group-hover:underline">
+          {item.name}
+        </span>
 
-                  </ul>
+      </Link>
+    </li>
+
+  ))}
+
+</ul>
 
                 </div>
 
